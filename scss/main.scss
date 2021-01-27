@@ -93,3 +93,56 @@
         }
     }
 }
+
+#about {
+    @include for-section;
+
+    .wrapper {
+        @include for-wrapper;
+        justify-content: center;
+        align-items: center;
+
+        .cameraPhoto {
+            margin-right: 4%;
+
+            img {
+                width: 85%;
+                height: auto;
+            }
+        }
+
+        .introduce {
+            width: 60%;
+
+            h3 {
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-size: 42px;
+                font-weight: 100;
+                margin-bottom: 5%; 
+            }
+
+            p {
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-style: italic;
+                font-size: 14px;
+                font-weight: 300;
+                word-spacing: 1px;
+                line-height: 2;
+            }
+            
+            .social {
+                margin-top: 15%;
+
+                a {
+                    margin-right: 5%;
+                    color: #909090;
+                    transition: .5s;
+                }
+
+                a:hover {
+                    color: #000000;
+                }
+            }   
+        }
+    }
+}
