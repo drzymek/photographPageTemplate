@@ -311,3 +311,87 @@
         }
     }
 }
+
+#contact {
+    @include for-section;
+
+    .wrapper {
+        @include for-wrapper;
+        margin-top: 0;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+
+        h2 {
+            margin-top: 5%;
+            font-family: 'Raleway', Helvetica, sans-serif;
+            font-size: 42px;
+            font-weight: 100;
+        }
+
+        p {
+            margin-top: 3%;
+            margin-bottom: 3%;
+            width: 85%;
+            font-family: 'Raleway', Helvetica, sans-serif;
+            font-style: italic;
+            font-weight: 300;
+            word-spacing: 1px;
+            line-height: 2;
+            text-align: center;
+        }
+
+        form {
+            position: relative;
+            text-align: center;
+            width: 50%;
+
+            input {
+                width: 47%;
+                padding: 1% 2%;
+                background-color: transparent;
+                border: 1px solid black;
+            }
+
+            input::placeholder {
+                color: #000;
+                font-family: 'Raleway', Helvetica, sans-serif;
+            }
+
+            .email {
+                position: absolute;
+                top: 0;
+                left: 0;
+            }
+
+            .phone {
+                position: absolute;
+                top: 0;
+                right: 0;
+            }
+
+            textarea {
+                width: 100%;
+                height: 50%;
+                margin-top: 7%;
+                margin-bottom: 5%;
+                padding: 2% 2%;
+                background-color: transparent;
+                border: 1px solid black;
+            }
+
+            textarea::placeholder {
+                color: #000;
+                font-family: 'Raleway', Helvetica, sans-serif;
+            }
+
+            .submit {
+                width: 100%;
+                line-height: 16px;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: #111;
+            }
+        }
+    }
+}
