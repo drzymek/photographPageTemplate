@@ -456,4 +456,102 @@
             }
         }
     }
+
+    #about {
+        .wrapper{
+
+            .cameraPhoto {
+                display: none;
+            }
+
+            .introduce {
+                width: 90%;
+                text-align: center;
+
+                h3:before {
+                    display: none;
+                }
+
+                h3 {
+                    font-size: 30px;
+                }
+
+                .social {
+                    
+                    i {
+                        font-size: 25px;
+                    }
+                }
+
+            }
+        }
+    }
+
+    #description {
+
+        .wrapper {
+
+        .quotation {
+            width: 90%;
+            text-align: center;
+
+            h3 {
+                font-size: 30px;
+            }
+
+            p {
+                padding: 0;
+            }
+        }
+
+        .quotation::after {
+            display: none;
+        }
+
+        .descriptionPhoto {
+            display: none;
+        }
+    }
+    }
+
+    #secondSlider {
+
+        .wrapper {
+
+            .threePhotoSlider {
+
+                .currentPhoto img {
+                    width: 75%;
+                }
+            }
+        }
+    }
+
+    #contact {
+
+        .wrapper {
+
+            h2 {
+                margin-top: 15%;
+                font-size: 30px;
+            }
+
+            form {
+            width: 90%;
+
+            input {
+                width: 100%;
+            }
+
+            .email {
+                position: relative;
+                margin-bottom: 5%;
+            }
+
+            .phone {
+                position: relative;
+            }
+            }
+        }
+    }
 }
