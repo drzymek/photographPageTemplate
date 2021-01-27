@@ -1,3 +1,5 @@
+
+
 * {
     margin: 0;
     padding: 0;
@@ -25,6 +27,28 @@
 
 #hero {
     @include for-section;
+
+    header {
+        height: 80px;
+
+        nav.desktopNav {
+            
+            ul {
+                display: flex;
+                justify-content: flex-end;
+                list-style-type: none;
+
+                li {
+                    margin-right: 2%;
+                    margin-top: 2%;
+                    text-transform: uppercase;
+                    transition: .75s;
+                    border-bottom: 1px solid transparent;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
 
     .wrapper {
         @include for-wrapper;

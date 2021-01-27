@@ -15,6 +15,30 @@
   overflow: hidden;
 }
 
+#hero header {
+  height: 80px;
+}
+
+#hero header nav.desktopNav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  list-style-type: none;
+}
+
+#hero header nav.desktopNav ul li {
+  margin-right: 2%;
+  margin-top: 2%;
+  text-transform: uppercase;
+  -webkit-transition: .75s;
+  transition: .75s;
+  border-bottom: 1px solid transparent;
+  cursor: pointer;
+}
+
 #hero .wrapper {
   position: relative;
   display: -webkit-box;
