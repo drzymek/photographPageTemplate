@@ -176,4 +176,33 @@
 #about .wrapper .introduce .social a:hover {
   color: #000000;
 }
+
+#fullSizeSlider {
+  position: relative;
+  width: 1440px;
+  max-width: 95%;
+  height: 600px;
+  margin: 30px auto;
+  background-color: #efefef;
+  overflow: hidden;
+}
+
+#fullSizeSlider .carousel .carousel-inner {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 600px;
+}
+
+#fullSizeSlider .carousel .carousel-control-next, #fullSizeSlider .carousel .carousel-control-prev {
+  height: 600px;
+}
+
+#fullSizeSlider .carousel .carousel-control-next-icon, #fullSizeSlider .carousel .carousel-control-prev-icon {
+  height: 40px;
+  width: 40px;
+}
 /*# sourceMappingURL=main.css.map */
