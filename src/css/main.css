@@ -270,4 +270,86 @@
 #description .wrapper .descriptionPhoto img {
   width: 100%;
 }
+
+#secondSlider {
+  position: relative;
+  width: 1440px;
+  max-width: 95%;
+  height: 600px;
+  margin: 30px auto;
+  background-color: #efefef;
+  overflow: hidden;
+}
+
+#secondSlider .wrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 1180px;
+  max-width: 95%;
+  height: 100%;
+  margin: 0 auto;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#secondSlider .wrapper .threePhotoSlider {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#secondSlider .wrapper .threePhotoSlider li {
+  list-style-type: none;
+}
+
+#secondSlider .wrapper .threePhotoSlider li img {
+  width: 100%;
+  height: auto;
+}
+
+#secondSlider .wrapper .threePhotoSlider .currentPhoto img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 50%;
+  z-index: 3;
+}
+
+#secondSlider .wrapper .threePhotoSlider .leftPhoto img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-170%, -50%);
+          transform: translate(-170%, -50%);
+  width: 30%;
+  z-index: 2;
+}
+
+#secondSlider .wrapper .threePhotoSlider .rightPhoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(70%, -50%);
+          transform: translate(70%, -50%);
+  width: 30%;
+  z-index: 2;
+}
+
+#secondSlider .wrapper .threePhotoSlider .backPhoto {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  width: 30%;
+  z-index: 1;
+}
 /*# sourceMappingURL=main.css.map */

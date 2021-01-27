@@ -227,3 +227,62 @@
         }
     }
 }
+
+#secondSlider {
+    @include for-section;
+
+    .wrapper {
+        @include for-wrapper;
+        justify-content: center;
+
+        .threePhotoSlider {
+            display: flex;
+            align-items: center;
+
+        li {
+            list-style-type: none;
+
+            img {
+                width: 100%;
+                height: auto;
+            };
+        }
+
+        .currentPhoto  img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 50%;
+            z-index: 3;
+        }
+
+        .leftPhoto img {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-170%, -50%);
+            width: 30%;
+            z-index: 2;
+        }
+
+        .rightPhoto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(70%, -50%);
+            width: 30%;
+            z-index: 2;
+        }
+
+        .backPhoto {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 30%;
+            z-index: 1;
+        }
+    }
+    }
+}
