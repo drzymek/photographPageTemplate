@@ -53,6 +53,10 @@
                 }
             }
         }
+
+        nav.mobileNav {
+            display: none;
+        }
     }
 
     .wrapper {
@@ -391,6 +395,64 @@
                 text-transform: uppercase;
                 color: #fff;
                 background-color: #111;
+            }
+        }
+    }
+}
+
+/* smartphones --------------------*/
+@media only screen and (max-device-width: 480px) {
+    #hero {
+
+        header {
+
+            nav.desktopNav {
+                display: none;
+            }
+
+            nav.mobileNav {
+                position: relative;
+                display: flex;
+                justify-content: flex-end; 
+                
+                span {
+                    position: absolute;
+                    left: 2%;
+                    margin-top: 5%;
+                    text-align: center;
+
+                    i { 
+                        font-size: 20px;
+                        visibility: hidden;;
+                    }
+
+                    i.on {
+                        visibility: visible;
+                    }
+
+                }
+
+                ul {
+                    transition: .3s linear;
+                }
+                
+                ul.on {
+                    position: absolute;
+                    list-style-type: none;
+                    right: 0;
+                    margin-right: 4%;
+                    margin-top: 2%; 
+
+
+                    li {
+                        font-family: 'Raleway', Helvetica, sans-serif;;
+                    }
+                    
+                }
+
+                ul.off {
+                    right: -90px;
+                }
             }
         }
     }
