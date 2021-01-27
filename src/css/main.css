@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,200;0,400;1,200;1,300&display=swap");
 * {
   margin: 0;
   padding: 0;
@@ -37,6 +38,11 @@
   transition: .75s;
   border-bottom: 1px solid transparent;
   cursor: pointer;
+  font-family: 'Raleway', Helvetica, sans-serif;
+}
+
+#hero header nav.desktopNav ul li:hover {
+  border-bottom: 1px solid black;
 }
 
 #hero .wrapper {
