@@ -57,5 +57,39 @@
 
     .wrapper {
         @include for-wrapper;
+
+        .welcome {
+            display: flex;
+            flex-direction: column;
+            width: 45%;
+
+            h1 {
+                margin-top: 15%;
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-size: 42px;
+                font-weight: lighter;
+                margin-bottom: 4%
+            }
+
+            p {
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-size: 16px;
+                font-style: italic;
+                font-weight: lighter;
+                word-spacing: 10px;
+            }
+        }
+
+        .photo {
+            position: relative;
+            width: 55%;
+
+            img {
+                position: absolute;
+                    bottom: 12%;
+                    width: 100%;
+                    opacity: .9;
+            }
+        }
     }
 }
