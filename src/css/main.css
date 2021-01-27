@@ -352,4 +352,31 @@
   width: 30%;
   z-index: 1;
 }
+
+#secondSlider .wrapper .fas {
+  background-color: #fff;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  text-align: center;
+  font-size: 30px;
+  position: absolute;
+  cursor: pointer;
+}
+
+#secondSlider .wrapper .fa-chevron-left {
+  top: 50%;
+  left: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
+
+#secondSlider .wrapper .fa-chevron-right {
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  z-index: 2;
+}
 /*# sourceMappingURL=main.css.map */
