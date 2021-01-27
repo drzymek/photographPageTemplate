@@ -6,6 +6,7 @@ const scrollToAbout = () => {
     const aboutSection = document.querySelector('#about').offsetTop;
     window.scroll({
         top: aboutSection,
+        behavior: "smooth",
     })
 }
 
