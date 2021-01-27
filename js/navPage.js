@@ -29,3 +29,25 @@ const scrollToContact = () => {
 navAbout.addEventListener('click', scrollToAbout);
 navMywork.addEventListener('click', scrollToMyWork);
 navContact.addEventListener('click', scrollToContact);
+
+
+/* mobile nav -------------------------*/
+const barsBtn = document.querySelector('.fa-bars');
+const closeBtn = document.querySelector('.fa-times');
+const mobileMenu = document.querySelector('#mobileMenu')
+const mobileAbout = document.querySelector('.mobileNavAbout');
+const mobileMyWork = document.querySelector('.mobileNavMyWork');
+const mobileContact = document.querySelector('.mobileNavContact');
+
+const handleMenuBtn = () => {
+    closeBtn.classList.toggle('on');
+    barsBtn.classList.toggle('on');
+    mobileMenu.classList.toggle('off');
+}
+
+closeBtn.addEventListener('click', handleMenuBtn);
+barsBtn.addEventListener('click', handleMenuBtn);
+
+mobileAbout.addEventListener('click', scrollToAbout);
+mobileMyWork.addEventListener('click', scrollToMyWork);
+mobileContact.addEventListener('click', scrollToContact);
