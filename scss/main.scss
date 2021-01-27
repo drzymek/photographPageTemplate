@@ -180,3 +180,50 @@
         }
 }
 
+#description {
+    @include for-section;
+
+    .wrapper {
+        @include for-wrapper;
+        justify-content: center;
+        align-items: center;
+        
+        .quotation {
+            width: 45%;
+            text-align: left;
+
+            h3 {
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-size: 42px;
+                font-weight: 100;
+                margin-bottom: 5%;
+            }
+
+            p {
+                padding-right: 15%;
+                font-family: 'Raleway', Helvetica, sans-serif;
+                font-style: italic;
+                font-size: 14px;
+                font-weight: 300;
+                word-spacing: 1px;
+                line-height: 2;
+            }
+        }
+
+        .quotation::after {
+            content: "";
+            display: inline-block;
+            width: 1px;
+            height: 70px;
+            background-color: #111;
+        }
+
+        .descriptionPhoto {
+            width: 55%;
+
+            img {
+                width: 100%;
+            }
+        }
+    }
+}
