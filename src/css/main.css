@@ -618,7 +618,7 @@
 
 /* tablets --------------------------*/
 @media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
-  #about .wrapper .cameraPhoto {
+  #about .wrapper div.cameraPhoto {
     width: 40%;
   }
   #contact .wrapper h2 {
