@@ -555,3 +555,43 @@
         }
     }
 }
+
+/* tablets --------------------------*/
+@media only screen and (min-device-width: 481px) and (max-device-width: 768px) {
+    
+    #about {
+        .wrapper {
+            .cameraPhoto{
+                width: 40%;
+            }
+        }
+    }
+
+    #contact {
+
+        .wrapper {
+
+            h2 {
+                margin-top: 5%;
+                font-size: 30px;
+            }
+
+            form {
+              width: 90%;
+
+              input {
+                  width: 100%;
+              }
+
+              .email {
+                  position: relative;
+                  margin-bottom: 5%;
+              }
+
+              .phone {
+                  position: relative;
+              }
+            }
+        }
+    }
+}
